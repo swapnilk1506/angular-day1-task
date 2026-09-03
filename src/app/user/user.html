@@ -1,0 +1,17 @@
+<section>
+    <h2 appHighlight>User Component - Data Binding</h2>
+
+    <!---Interpolation-->
+    <!-- When we use double curly braces {{ }} in an Angular template to evaluate and display an expression, it is called interpolation. -->
+    <h3>Interpolation</h3>
+    <p>Name: {{ name }}</p>
+    <p>Role: {{role}}</p>
+
+    <!-- Property Binding -->
+     <h3>Property Binding</h3>
+     <button [disabled]="isButtonDisabled">Submit</button>
+
+     <!--Event Binding-->
+     <h3>Event Binding</h3>
+     <button (click)="showMessage()">Click Me</button>
+</section>

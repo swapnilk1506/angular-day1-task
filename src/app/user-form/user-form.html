@@ -1,0 +1,28 @@
+<section>
+    <h2>User Registration Form</h2>
+    <form (ngSubmit)="submitForm()">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text"
+            id="name"
+            name="name"
+            [(ngModel)]="name"
+            placeholder="Enter Your Name">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email"
+            id="email"
+            name="email"
+            [(ngModel)]="email"
+            placeholder="email">
+        </div>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    <hr>
+    <h3>Live Preview</h3>
+    <p>Name:{{name}}</p>
+    <p>Email:{{email}}</p>
+</section>
